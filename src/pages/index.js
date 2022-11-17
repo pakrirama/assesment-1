@@ -31,19 +31,12 @@ export default function Home() {
       } else {
         setHasMoreItems(true);
       }
-
-      console.log(data);
-      alert(page);
-      if (nat) {
-        alert(nat);
-      }
     } catch (error) {
       console.log(error);
     }
   };
 
   const onChange = (value) => {
-    console.log(`selected ${value}`);
     setNat(value);
   };
 
@@ -71,7 +64,6 @@ export default function Home() {
             placeholder="Select Country"
             optionFilterProp="children"
             onChange={onChange}
-            // onSearch={onSearch}
             filterOption={(input, option) =>
               (option?.label ?? "").toLowerCase().includes(input.toLowerCase())
             }

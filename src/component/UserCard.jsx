@@ -25,7 +25,6 @@ export const UserCard = ({ data }) => {
         }}
         onClick={() => {
           setIsModalOpen(true);
-          console.log(isModalOpen);
         }}
         className="fadeIn"
       >
